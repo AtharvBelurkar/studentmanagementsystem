@@ -1,0 +1,11 @@
+package com.studentmanagementsystem.sms.service;
+import com.studentmanagementsystem.sms.entity.Student;
+import java.util.List;
+public interface StudentService {
+    List<Student> getAllStudents();
+    Student saveStudent(Student student);
+    long countTotalStudent();
+    Student getStudentById(Long id);
+    Student updateStudent(Student student);
+    void deleteStudentById(Long id);
+}
